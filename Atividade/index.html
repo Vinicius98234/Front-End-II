@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form>
+        <label for="nametutor">Nome do tutor:</label><br>
+        <input id="nome-tutor" type="text" placeholder="Nome do tutor" /><br>
+        <label for="namecachorro">Nome do cachorro:</label><br>
+        <input id="nome-cachorro" type="text" placeholder='Nome do cachorro' /><br>
+        <label for="racadog">Raça do cachorro:</label><br>
+        <input id="raca-cachorro" type = "text" placeholder="Raça do raca-cachorro"/> <br><br>
+      </form> 
+      <button onclick="fazerCadastro()"> Cadastre-se </button>
+      <script>
+            function fazerCadastro(){
+            nomecadastro = document.getElementById('nome-tutor').value;
+            cachorrocadastro = document.getElementById('nome-cachorro').value;
+            racacadastro = document.getElementById('raca-cachorro').value;
+            if(nomecadastro == "" && cachorrocadastro == ""){
+                alert("Insira o nome do tutor e do cachoro")
+            }
+            else{
+            alert('Usuário cadastrado com sucesso!')
+            }
+        }
+
+      </script>
+</body>
+</html>
